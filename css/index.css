@@ -126,3 +126,112 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #222329;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-family: 'monoton', sans-serif;
+  font-size: 7rem;
+  color: white;
+}
+h2 {
+  font-size: 4rem;
+  color: white;
+}
+p {
+  font-size: 2rem;
+  line-height: 2;
+  color: white;
+}
+a {
+  color: white;
+}
+.main-img-conatiner {
+  background-image: url(/images/girl-eating.jpg);
+  background-size: cover;
+  filter: grayscale(20%);
+}
+header {
+  height: 20rem;
+}
+header .logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  margin-left: 5%;
+}
+header .logo-nav-container h1 {
+  margin-top: 1%;
+}
+header .logo-nav-container nav {
+  width: 50%;
+  text-align: center;
+  margin-top: 1%;
+}
+header .logo-nav-container nav a {
+  padding: 5%;
+  font-size: 2rem;
+  text-decoration: none;
+}
+body .about {
+  width: 30%;
+  margin-left: 4%;
+  margin-top: 5%;
+}
+body .about h2 {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+body .features-header {
+  text-align: center;
+  margin-bottom: -5%;
+  margin-top: 6.5%;
+}
+body .features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: no-wrap;
+}
+body .features .features-card {
+  background-color: white;
+  margin-top: 7%;
+  margin-bottom: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 30rem;
+  width: 20%;
+  border-radius: 10px;
+  padding: 1%;
+  text-align: center;
+}
+body .features .features-card:hover {
+  background-color: #222329;
+  color: white;
+}
+body .features .features-card:hover p {
+  color: white;
+}
+body .features .features-card p {
+  color: black;
+  height: 40%;
+}
+body .features .features-card i {
+  font-size: 12rem;
+  align-items: center;
+  margin-top: 5%;
+}
