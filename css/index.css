@@ -235,3 +235,19 @@ body .features .features-card i {
   align-items: center;
   margin-top: 5%;
 }
+.team-heading-art-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+  margin-top: 2%;
+}
+.team-heading-art-container .team-intro {
+  margin-top: 3%;
+  margin-left: 4%;
+}
+.team-heading-art-container .team-intro p {
+  margin-top: 10%;
+}
+.team-heading-art-container .svg-art {
+  margin-right: 15%;
+}
