@@ -189,17 +189,44 @@ header .logo-nav-container {
     flex-direction: column;
   }
 }
+@media (max-width: 800px) {
+  header .logo-nav-container {
+    flex-direction: column;
+  }
+}
 header .logo-nav-container h1 {
   margin-top: 1%;
+  margin-left: -3%;
+}
+@media (max-width: 500px) {
+  header .logo-nav-container h1 {
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 5%;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  header .logo-nav-container h1 {
+    text-align: center;
+  }
 }
 header .logo-nav-container nav {
   width: 50%;
-  text-align: center;
-  margin-top: 1%;
+  text-align: right;
+  margin-top: 2%;
 }
 @media (max-width: 500px) {
   header .logo-nav-container nav {
     margin-top: 5%;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  header .logo-nav-container nav {
+    margin-top: 5%;
+    text-align: center;
     width: 100%;
   }
 }
@@ -209,9 +236,9 @@ header .logo-nav-container nav a {
   border: 1.5px solid white;
   border-radius: 10px;
   padding: 1rem;
-  padding-right: 5%;
-  padding-left: 5%;
-  margin-left: 5%;
+  padding-right: 2%;
+  padding-left: 2%;
+  margin-right: 2%;
   background-color: #222329;
 }
 @media (max-width: 500px) {
@@ -232,6 +259,13 @@ body .about {
 @media (max-width: 500px) {
   body .about {
     width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  body .about {
+    text-align: center;
+    width: 85%;
   }
 }
 body .about h2 {
@@ -247,12 +281,25 @@ body .features {
   display: flex;
   justify-content: center;
   flex-wrap: no-wrap;
+  align-items: center;
 }
 @media (max-width: 500px) {
   body .features {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 800px) {
+  body .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 800px) and (max-width: 800px) {
+  body .features {
+    margin-top: 5%;
   }
 }
 body .features .features-card {
@@ -272,6 +319,11 @@ body .features .features-card {
     width: 45%;
   }
 }
+@media (max-width: 800px) {
+  body .features .features-card {
+    width: 45%;
+  }
+}
 body .features .features-card:hover {
   background-color: #222329;
   color: white;
@@ -282,18 +334,24 @@ body .features .features-card:hover p {
 body .features .features-card p {
   color: black;
   height: 40%;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 body .features .features-card i {
-  font-size: 8rem;
+  font-size: 10rem;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 .team-heading-art-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: no-wrap;
   margin-top: 2%;
-  border: 2px solid red;
+}
+@media (max-width: 800px) {
+  .team-heading-art-container {
+    flex-direction: column;
+  }
 }
 @media (max-width: 500px) {
   .team-heading-art-container {
@@ -306,12 +364,42 @@ body .features .features-card i {
 }
 .team-heading-art-container .team-intro p {
   margin-top: 10%;
-  text-align: center;
+}
+@media (max-width: 800px) {
+  .team-heading-art-container .team-intro p {
+    text-align: center;
+    padding: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .team-heading-art-container .team-intro p {
+    text-align: center;
+    padding: 2%;
+  }
+}
+@media (max-width: 800px) {
+  .team-heading-art-container .team-intro h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .team-heading-art-container .team-intro h2 {
+    text-align: center;
+  }
 }
 .team-heading-art-container .svg-art {
   margin-right: 20%;
   max-width: 100%;
-  border: 2px solid white;
+}
+@media (max-width: 800px) {
+  .team-heading-art-container .svg-art {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .team-heading-art-container .svg-art {
+    width: 100%;
+  }
 }
 .team-member-container {
   display: flex;
@@ -320,10 +408,22 @@ body .features .features-card i {
 }
 .team-member-container .team-member-card {
   border: 2px solid white;
+  border-radius: 10px;
   background-color: white;
   margin: 1%;
   width: 30%;
   height: 40rem;
+}
+@media (max-width: 800px) {
+  .team-member-container .team-member-card {
+    width: 45%;
+    height: 30rem;
+  }
+}
+@media (max-width: 500px) {
+  .team-member-container .team-member-card {
+    width: 100%;
+  }
 }
 footer {
   display: flex;

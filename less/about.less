@@ -3,6 +3,11 @@ body {
 .about {
 @media @mobile {
 width: 100%;
+text-align: center;
+}
+@media @tablet {
+text-align: center;
+width: 85%;
 }
 width: 30%;
 margin-left: 4%;
@@ -24,16 +29,24 @@ h2{
 
  .features {
      @media @mobile {
-     .flexIt(wrap, center);
-    //  flex-direction: column;
-     
+     .flexIt(wrap, center);  
+     }
+     @media @tablet {
+    .flexIt(wrap, center);
+    @media @tablet {
+    margin-top: 5%;
+     }
      }
      .flexIt(no-wrap, center );
+     align-items: center;
      
 
      .features-card {
          @media @mobile {
          width: 45%;
+         }
+         @media @tablet {
+         width: 45%;    
          }
          background-color: white;
          margin-top: 7%;
@@ -58,12 +71,14 @@ h2{
          p {
              color: black;
              height: 40%;
+             font-size: 1.6rem;
+             font-weight: bold;
          }
 
          i {
-             font-size: 8rem;
+             font-size: 10rem;
              align-items: center;
-             margin-top: 20%;
+             margin-top: 10%;
         
              
          }
