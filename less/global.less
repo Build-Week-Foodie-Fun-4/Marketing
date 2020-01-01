@@ -1,6 +1,8 @@
 // General Styles
 * {
     box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
   }
   
   html {
@@ -10,6 +12,7 @@
   html, body {
     font-family: 'Roboto', sans-serif;
     background-color: rgba(34, 35, 41, 1);
+
    
   }
   
@@ -41,8 +44,17 @@
   }
 
   .main-img-conatiner{
+@media @mobile {
+background-size:contain 100% 100%;
+background-repeat: no-repeat;
+background-position: 50% 70%;
+
+
+}
 background-image: url(/images/girl-eating.jpg);
 background-size: cover;
 filter: grayscale(20%);
 
-  }
+
+}
+  
