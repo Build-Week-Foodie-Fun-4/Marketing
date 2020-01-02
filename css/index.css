@@ -166,13 +166,29 @@ a {
 .main-img-conatiner {
   background-image: url(/images/girl-eating.jpg);
   background-size: cover;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
   filter: grayscale(20%);
+}
+@media (max-width: 1300px) {
+  .main-img-conatiner {
+    background-size: contain 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 80% 70%;
+  }
 }
 @media (max-width: 500px) {
   .main-img-conatiner {
     background-size: contain 100% 100%;
     background-repeat: no-repeat;
-    background-position: 50% 70%;
+    background-position: 80% 60%;
+  }
+}
+@media (max-width: 800px) {
+  .main-img-conatiner {
+    background-size: cover;
+    background-position: 63% 100%;
   }
 }
 header {
@@ -226,6 +242,7 @@ header .logo-nav-container nav {
 @media (max-width: 800px) {
   header .logo-nav-container nav {
     margin-top: 5%;
+    margin-left: -2%;
     text-align: center;
     width: 100%;
   }
@@ -302,6 +319,13 @@ body .features {
     margin-top: 5%;
   }
 }
+@media (max-width: 500px) {
+  body .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 body .features .features-card {
   background-color: white;
   margin-top: 7%;
@@ -317,11 +341,13 @@ body .features .features-card {
 @media (max-width: 500px) {
   body .features .features-card {
     width: 45%;
+    margin-top: 2%;
   }
 }
 @media (max-width: 800px) {
   body .features .features-card {
     width: 45%;
+    margin-top: 1%;
   }
 }
 body .features .features-card:hover {
@@ -394,6 +420,7 @@ body .features .features-card i {
 @media (max-width: 800px) {
   .team-heading-art-container .svg-art {
     width: 100%;
+    margin-right: 0;
   }
 }
 @media (max-width: 500px) {
@@ -422,7 +449,8 @@ body .features .features-card i {
 }
 @media (max-width: 500px) {
   .team-member-container .team-member-card {
-    width: 100%;
+    width: 45%;
+    margin-top: 2%;
   }
 }
 footer {

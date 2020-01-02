@@ -44,15 +44,26 @@
   }
 
   .main-img-conatiner{
+@media @transition {
+background-size:contain 100% 100%;
+background-repeat: no-repeat;
+background-position: 80% 70%;
+}
 @media @mobile {
 background-size:contain 100% 100%;
 background-repeat: no-repeat;
-background-position: 50% 70%;
+background-position: 80% 60%;
+}
 
-
+@media @tablet {
+  background-size: cover;
+  background-position: 63% 100%;  
 }
 background-image: url(/images/girl-eating.jpg);
 background-size: cover;
+width: 100%;
+height: auto;
+background-repeat: no-repeat;
 filter: grayscale(20%);
 
 
