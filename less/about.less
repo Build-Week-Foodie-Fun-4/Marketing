@@ -13,7 +13,6 @@ width: 30%;
 margin-left: 4%;
 margin-top: 5%;
 
-
 h2{
     margin-bottom: 5%;
     margin-top: 5%;
@@ -30,11 +29,12 @@ h2{
  .features {
      @media @mobile {
      .flexIt(wrap, center);  
+    
      }
      @media @tablet {
     .flexIt(wrap, center);
     @media @tablet {
-    margin-top: 5%;
+    margin-top: 10%;
      }
      }
      @media @mobile {
@@ -43,7 +43,7 @@ h2{
      }
      .flexIt(no-wrap, center );
      align-items: center;
-     
+
 
      .features-card {
          @media @mobile {
@@ -66,7 +66,7 @@ h2{
          text-align: center;
          
          &:hover{ 
-            background-color: rgba(34, 35, 41, 1);
+            background-color: @bgColor;
             color: white;
 
             p {

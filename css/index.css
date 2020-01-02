@@ -156,6 +156,7 @@ h2 {
   color: white;
 }
 p {
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   line-height: 2;
   color: white;
@@ -316,7 +317,7 @@ body .features {
 }
 @media (max-width: 800px) and (max-width: 800px) {
   body .features {
-    margin-top: 5%;
+    margin-top: 10%;
   }
 }
 @media (max-width: 500px) {
@@ -414,13 +415,13 @@ body .features .features-card i {
   }
 }
 .team-heading-art-container .svg-art {
-  margin-right: 20%;
+  margin-right: 15%;
   max-width: 100%;
 }
 @media (max-width: 800px) {
   .team-heading-art-container .svg-art {
     width: 100%;
-    margin-right: 0;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
@@ -458,6 +459,11 @@ footer {
   justify-content: center;
   flex-wrap: no-wrap;
   border: 1px solid white;
+}
+@media (max-width: 800px) {
+  footer {
+    margin-top: 5%;
+  }
 }
 footer p {
   margin-left: 1%;
