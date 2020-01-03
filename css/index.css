@@ -454,6 +454,17 @@ body .features .features-card i {
     margin-top: 2%;
   }
 }
+.team-member-container .team-member-card img {
+  width: 50%;
+  border-radius: 50%;
+  margin-left: 25%;
+  margin-top: 2%;
+}
+.team-member-container p {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
 footer {
   display: flex;
   justify-content: center;
