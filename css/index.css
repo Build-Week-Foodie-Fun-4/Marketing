@@ -170,7 +170,6 @@ a {
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
-  filter: grayscale(20%);
 }
 @media (max-width: 1300px) {
   .main-img-conatiner {
@@ -273,17 +272,18 @@ body .about {
   width: 30%;
   margin-left: 4%;
   margin-top: 5%;
+  text-align: left;
 }
 @media (max-width: 500px) {
   body .about {
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 }
 @media (max-width: 800px) {
   body .about {
-    text-align: center;
-    width: 85%;
+    text-align: left;
+    width: 50%;
   }
 }
 body .about h2 {
@@ -342,7 +342,7 @@ body .features .features-card {
 @media (max-width: 500px) {
   body .features .features-card {
     width: 45%;
-    margin-top: 2%;
+    margin-top: 1%;
   }
 }
 @media (max-width: 800px) {
@@ -440,7 +440,7 @@ body .features .features-card i {
   background-color: white;
   margin: 1%;
   width: 30%;
-  height: 40rem;
+  height: auto;
 }
 @media (max-width: 800px) {
   .team-member-container .team-member-card {
@@ -451,7 +451,7 @@ body .features .features-card i {
 @media (max-width: 500px) {
   .team-member-container .team-member-card {
     width: 45%;
-    margin-top: 2%;
+    margin-top: 5%;
   }
 }
 .team-member-container .team-member-card img {
