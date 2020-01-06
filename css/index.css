@@ -269,21 +269,25 @@ header .logo-nav-container nav a:hover {
   border: 1.5px solid black;
 }
 body .about {
-  width: 30%;
+  width: 35%;
   margin-left: 4%;
-  margin-top: 5%;
+  margin-top: 4%;
   text-align: left;
-}
-@media (max-width: 500px) {
-  body .about {
-    width: 100%;
-    text-align: left;
-  }
+  background: rgba(34, 35, 41, 0.5);
+  padding: 1%;
+  border-radius: 10px;
 }
 @media (max-width: 800px) {
   body .about {
     text-align: left;
     width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  body .about {
+    width: 90%;
+    text-align: left;
+    margin: auto;
   }
 }
 body .about h2 {
@@ -450,7 +454,7 @@ body .features .features-card i {
 }
 @media (max-width: 500px) {
   .team-member-container .team-member-card {
-    width: 45%;
+    width: 90%;
     margin-top: 5%;
   }
 }
@@ -464,6 +468,11 @@ body .features .features-card i {
   color: black;
   text-align: center;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .team-member-container p {
+    margin-bottom: -2%;
+  }
 }
 footer {
   display: flex;
